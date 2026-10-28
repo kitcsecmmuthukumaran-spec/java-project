@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Zombie Survival Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>🧟 AI Zombie Survival</h1>
+            <p>Survive the zombies using your skills!</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3>❤️ Health</h3>
+                <span id="health">100</span>
+            </div>
+
+            <div class="stat-box">
+                <h3>🏆 Score</h3>
+                <span id="score">0</span>
+            </div>
+
+            <div class="stat-box">
+                <h3>🌊 Wave</h3>
+                <span id="wave">1</span>
+            </div>
+        </div>
+
+        <div class="game-area">
+
+            <canvas id="gameCanvas" width="900" height="520"></canvas>
+
+            <div id="gameOverlay" class="overlay">
+                <h2 id="overlayTitle">Ready to Survive?</h2>
+
+                <p id="overlayMessage">
+                    Move, aim, and shoot the zombies!
+                </p>
+
+                <button id="startButton">START GAME</button>
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            <h3>🎮 Controls</h3>
+            <p>W A S D / Arrow Keys — Move Player</p>
+            <p>Mouse — Aim</p>
+            <p>Left Click / Space — Shoot</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
