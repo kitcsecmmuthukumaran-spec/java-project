@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1117;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #a3ff68;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #b9c7ce;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.stat-box {
+    background: #17232c;
+    border: 1px solid #354650;
+    border-radius: 10px;
+    padding: 12px 25px;
+    text-align: center;
+    min-width: 110px;
+}
+
+.stat-box h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.stat-box span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a3ff68;
+}
+
+.game-area {
+    position: relative;
+    width: 100%;
+    background: #101b1b;
+    border: 2px solid #354650;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: crosshair;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h2 {
+    color: #a3ff68;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    margin-bottom: 15px;
+    color: #d0dadd;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+button {
+    padding: 14px 28px;
+    background: #a3ff68;
+    color: #10200c;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #80e846;
+}
+
+.instructions {
+    margin-top: 18px;
+    padding: 18px;
+    background: #17232c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.instructions h3 {
+    color: #a3ff68;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    color: #c2cdd2;
+    margin: 7px 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .stats {
+        gap: 6px;
+    }
+
+    .stat-box {
+        min-width: 0;
+        flex: 1;
+        padding: 10px 5px;
+    }
+
+    .stat-box h3 {
+        font-size: 12px;
+    }
+
+    .stat-box span {
+        font-size: 20px;
+    }
+
+    .overlay h2 {
+        font-size: 22px;
+    }
+}
